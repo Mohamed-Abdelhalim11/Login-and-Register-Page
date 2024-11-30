@@ -70,6 +70,18 @@ h1 {
   transition: border .2s ease;
 }
 
+.form .typeContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.form .typeContainer .userType {
+  padding: 0 !important;
+  margin: 0 5px !important;
+  width: 5%;
+}
+
 .form input:focus {
   border: 1px solid #aaa;
   outline: none;

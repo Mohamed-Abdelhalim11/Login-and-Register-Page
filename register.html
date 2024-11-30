@@ -15,6 +15,12 @@
     <div class="forms">
       <form action="" class="form" method="post" id="registerForm">
         <h2 class="formType">Register</h2>
+        <div class="typeContainer">
+          <input type="radio" name="rule" class="userType" id="student" value="student">
+          <label for="student">Student</label>
+          <input type="radio" name="rule" class="userType" id="instructor" value="instructor">
+          <label for="instructor">Instructor</label>
+        </div>
         <input type="text" id="username" name="name" required placeholder="Username">
         <input type="email" id="email" name="email" required placeholder="Email">
         <input type="password" id="password" name="password" required minlength="8" placeholder="password">
