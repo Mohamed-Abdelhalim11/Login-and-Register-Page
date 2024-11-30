@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>E-Learning Website</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to our E-Learning Website</h1>
+  </header>
+  <div class="container">
+    <!-- Forms Section -->
+    <div class="forms">
+      <!-- Login Form -->
+      <form action="" class="form" id="loginForm">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" name="email" required placeholder="Enter Email">
+        <input type="password" id="loginPassword" name="password" required minlength="8" placeholder="Enter Password">
+        <input type="submit" value="Login">
+        <p>Don't have an account? <a href="#" id="showRegisterForm">Register here</a></p>
+      </form>
+
+      <!-- Registration Form -->
+      <form action="" class="form" id="registerForm" style="display: none;">
+        <h2>Register</h2>
+        <input type="text" id="name" name="name" required placeholder="Enter Username">
+        <input type="email" id="email" name="email" required placeholder="Enter valid Email">
+        <input type="password" id="password" name="password" required minlength="8" placeholder="Enter password">
+        <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" placeholder="Confirm password">
+        <input type="submit" value="Register">
+        <p>Already have an account? <a href="#" id="showLoginForm">Login here</a></p>
+      </form>
+    </div>
+
+    <!-- Image Section -->
+    <div class="image">
+      <img src="login and regiser.png" alt="Illustration">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
