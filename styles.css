@@ -1,19 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Parkinsans", sans-serif;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #1a1a2e;
   color: #fff;
-  margin: 0;
+  background-color: #1a1a2e;
 }
 
 header {
@@ -23,22 +19,24 @@ header {
   padding-top: 20px;
 }
 
-header h1 {
-  font-size: 2.5rem;
+h1 {
+  text-align: center;
   color: #ffc107;
+  padding-top: 10px;
+  cursor: pointer;
 }
 
 .container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   width: 90%;
   background: #121232;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 10px 27px 0px rgba(0, 0, 0, 0.65);
   padding: 20px;
+  margin: auto;
 }
 
 .forms {
@@ -53,10 +51,11 @@ header h1 {
   width: 100%;
 }
 
-.form h2 {
+.form .formType {
   margin-bottom: 20px;
   font-size: 1.8rem;
   text-align: center;
+  color: #ffc107;
 }
 
 .form input {
@@ -68,13 +67,18 @@ header h1 {
   background-color: #222;
   color: #fff;
   font-size: 1rem;
+  transition: border .2s ease;
+}
+
+.form input:focus {
+  border: 1px solid #aaa;
+  outline: none;
 }
 
 .form input[type="submit"] {
   background-color: #ffc107;
   color: #000;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
 }
 
 .form input[type="submit"]:hover {
@@ -89,10 +93,28 @@ header h1 {
 .form p a {
   color: #ffc107;
   text-decoration: none;
+  transition: .4s ease;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.form p a::after {
+  content: '';
+  background-color: #ffc107;
+  height: 1px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0;
+  transition: .4s ease;
 }
 
 .form p a:hover {
-  text-decoration: underline;
+  letter-spacing: 1px;
+}
+
+.form p a:hover::after {
+  width: 100%;
 }
 
 .image {
